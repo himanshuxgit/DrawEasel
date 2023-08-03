@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>DrawEasel</title>
+</head>
+<body class="bg-purple-700 flex flex-col items-center justify-center min-h-screen">
+    <div class="container flex items-center bg-white rounded-xl p-4 shadow-lg">
+      <canvas id="canvas" class="w-full"></canvas>
+      <div class="toolbox ml-4 border rounded-xl p-4 shadow-md">
+        <div class="flex mb-2">
+          <button id="decrease" class="btn"><img src="https://img.icons8.com/material-outlined/24/000000/minus.png"/></button>
+          <span id="size" class="text-lg font-medium mx-4">2</span>
+          <button id="increase" class="btn"><img src="https://img.icons8.com/material-outlined/24/000000/plus-math--v1.png"/></button>
+        </div>
+        <div class="mb-2">
+          <input type="color" id="color" class="color-input">
+        </div>
+        <div class="flex">
+          <button class="wt btn" onclick='w()'><img src="https://img.icons8.com/material-sharp/30/000000/edit--v1.png"/></button>
+          <button class="wt btn" onclick='erase()'><img src="https://img.icons8.com/ios-glyphs/30/000000/eraser.png"/></button>
+        </div>
+        <div class="flex">
+          <button id="line" class="btn">Line</button>
+        </div>
+        <div class="flex">
+            <button id="save" class="btn">Save</button>
+        </div>
+        <div class="flex">
+            <button id="clear" class="btn"><img src="https://img.icons8.com/material-outlined/24/000000/filled-trash.png"/></button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
